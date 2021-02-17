@@ -1,0 +1,18 @@
+<button (click)="toggleForm()">Show Form</button>
+
+<h1 class="title">My Thoughts</h1>
+
+<div class="submitted-container">
+  <app-post-form
+    (submitted)="onSubmit($event)"
+    *ngIf="showForm"
+  ></app-post-form>
+</div>
+
+<ol class="list-container">
+  <app-post
+    *ngFor="let post of myPosts; index as i"
+    [postObject]="post"
+    (deleted)="onDelete(i)"
+  ></app-post>
+</ol>

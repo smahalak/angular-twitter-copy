@@ -1,0 +1,12 @@
+.title {
+  font-family: "Homemade Apple", cursive;
+  color: rgb(3, 169, 244);
+}
+
+.list-container {
+  list-style: none;
+  height: 150px;
+  width: 400px;
+  border-radius: 10px;
+  background-color: white;
+}
